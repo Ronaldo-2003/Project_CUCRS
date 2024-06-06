@@ -1,0 +1,145 @@
+body {font-family: "Roboto", sans-serif;}
+
+.sidebar {
+    height: 100%;
+    width: 270px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #e2e0e0;
+    overflow-x: hidden;
+    padding-top: 16px;
+    
+}
+
+.sidebar-option-div {
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    float: right;
+    color: black;
+}
+
+.sidebar-option-div li{
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    padding: 10px;
+    padding-left: 20px;
+    list-style-type: none;
+    height: 50px;
+    width: 200%;
+    transition: 0.2s;
+}
+
+.sidebar-button {
+    position: relative;
+}
+
+.active{
+    background: rgb(245, 155, 173);
+    color: white;
+}
+/* To remove hover effect from active button */
+.link-hover:hover{
+    background: rgb(218,218,218,);
+    color: black;
+}
+/* .sidebar,.topnav {
+    height: 100%;
+    width: 50px;
+} */
+.img {
+    max-width: 100%;
+    height: auto;
+}
+
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 30px;
+    color: #1b1818;
+    display: block;
+}
+
+.sidebar a:hover {
+    color: #fb6464;
+}
+
+.main {
+    margin-left: 160px; /* Same as the width of the sidenav */
+    padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+    .sidebar a {font-size: 18px;}
+}
+/* Right-container */
+.right-container{
+    height: 100vh;
+    width: 80%;
+    float: right;
+}
+
+/* head-bar css */
+.head-bar{
+    background: black;
+    height: 45px;
+    width: 100%;
+}
+.headbar-btn{
+    background:transparent;
+    border: none;
+    margin-left: 10px;
+    margin-right: 4px;
+}
+
+/* Main-content-container */
+.main-container{
+    width: 100%;
+    height: calc(100vh - 45px);
+}
+
+/* Dashboard */
+.main-subdiv{
+    position: relative;
+    top: 1.5%;
+    left: 1%;
+    height: 98.5%;
+    width: 99%;
+}
+.dashboard-info{
+    padding:20px;
+    display: flex;
+}
+.dashboard-info .card{
+    height: 140px;
+    width: 33%;
+    margin: 10px;
+}
+.dashboard-info .card h1{
+    font-weight:600;
+    font-size: 25px;
+    margin: 10px;
+    margin-top: 25px;
+}
+.dashboard-info .card div{
+    height: 50px;
+    font-size: 40px;
+    margin: 10px;
+    color: rgb(194, 186, 186);
+}
+.card-col{
+    display: flex;
+    flex-direction: column;
+}
+.card-row{
+    display: flex;
+}
+.background-crimson{
+    background: crimson;
+    color: white;
+}
